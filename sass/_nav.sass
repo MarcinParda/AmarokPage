@@ -1,0 +1,27 @@
+nav
+    width: 100vw
+    height: $navH
+    position: fixed
+    ul
+        line-height: $navH - 2 * $nav-a-padding
+        list-style: none
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        li
+            flex-basis: 10%
+            a
+                color: #ccc
+                font-size: $font-size - 2
+                font-weight: 700
+                display: block
+                //background-color: #444
+                text-align: center
+                font-family: 'open sans', sans-serif
+                text-decoration: none
+                padding: $nav-a-padding
+                transition: .3s
+        li:last-child
+            flex-basis: 5%
+        li:hover a
+            color: $font-color
