@@ -1,9 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,CAAC;CAAG",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,CAAC;CAAG;;AGDhB,AAAA,IAAI,CAAC;EDAD,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;CCDJ",
     "sources": [
         "../sass/style.sass",
         "../sass/_variables.sass",
+        "../sass/_mixins.sass",
+        "../sass/_main.sass",
         "../sass/_mixins.sass"
     ],
     "names": [],
