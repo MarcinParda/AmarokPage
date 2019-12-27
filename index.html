@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Amarok: Blood of the North</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <nav>
         <ul>
-            <li><a href="#">Słowo wstępu</a></li>
-            <li><a href="#">Postaci i fabuła</a></li>
-            <li><a href="#">Świat gry</a></li>
-            <li><a href="#">Mechaniki</a></li>
-            <li><a href="#">Soundtrack</a></li>
-            <li><a href="#">Screeny z gry</a></li>
+            <li><a onclick="scroll2Id('one')">Słowo wstępu</a></li>
+            <li><a onclick="scroll2Id('two')">Postaci i fabuła</a></li>
+            <li><a onclick="scroll2Id('tree')">Świat gry</a></li>
+            <li><a onclick="scroll2Id('four')">Mechaniki</a></li>
+            <li><a onclick="scroll2Id('five')">Soundtrack</a></li>
+            <li><a onclick="scroll2Id('six')">Screeny z gry</a></li>
             <li>
-                <a href="#"><img src="img/usa-flag.png" alt=""></a>
+                <a><img src="img/usa-flag.png" alt=""></a>
             </li>
         </ul>
     </nav>
@@ -37,13 +38,19 @@
                 </br>
                 <span class="italic">- naczelny kapłan, Valgard Bezoki</span>
             </article>
-            <div class="media">
-                <a href=""><i class="fa fa-facebook-square"></i></a> <a href=""><i class="fa fa-twitter-square"></i></a>
-            </div>
+            <span class="continue" onclick="scroll2Id('one')">
+                <a>
+                    Czytaj dalej
+                    <i class="fa fa-arrow-down"></i>
+                </a>
+            </span>
         </div>
     </main>
-    <section class="one">
-    </section>
+    <section id="one" class="section1"></section>
+    <div class="media">
+        <a href=""><i class="fa fa-facebook-square"></i></a> <a href=""><i class="fa fa-twitter-square"></i></a>
+    </div>
+    <script src="js/scrollDown.js"></script>
 </body>
 
 </html>

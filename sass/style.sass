@@ -5,8 +5,18 @@
     margin: 0
     color: $font-color
     font-size: $font-size
+    font-family: $font-name
 .italic
     font-style: italic
+
+a
+    @include a-style
+    i
+        @include a-style
+
+a:hover, a:hover i
+    color: $font-color
+
 @import 'article'
 @import 'nav'
 @import 'main'
