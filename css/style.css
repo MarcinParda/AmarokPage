@@ -47,7 +47,24 @@ a:hover, a:hover i {
   padding-top: 60px;
 }
 
+.red {
+  color: red;
+}
+
 article {
+  margin: 0 auto;
+  margin-top: 5vh;
+  text-align: justify;
+  width: 70vw;
+  font-size: 16px;
+}
+
+article span.italic {
+  font-size: 16px;
+  font-style: italic;
+}
+
+article span.italic p {
   font-size: 16px;
 }
 
@@ -119,35 +136,47 @@ nav.arrowUp:hover {
 
 main {
   width: 100%;
-  height: 100vh;
   background-color: #000;
   overflow: hidden;
+  height: 100vh;
+}
+
+main article {
+  height: 40vh;
 }
 
 main img {
   margin: 0 auto;
-  padding-top: 5vh;
+  margin-top: 5vh;
   width: 70vw;
 }
 
-main article {
-  margin: 0 auto;
-  text-align: justify;
-  width: 70vw;
-  height: 40vh;
-  font-style: italic;
+section img {
+  margin-top: 5vh;
+  max-width: 100%;
 }
 
-main article span.italic {
+section img.title {
+  margin-top: 60px;
+}
+
+section article span {
   font-size: 16px;
-  font-style: normal;
 }
 
-section.section1 {
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-  overflow: hidden;
+.section1, .section3 {
   background-color: #111;
+}
+
+.section2 {
+  background-color: #000;
+}
+
+.section1 {
+  height: 100vh;
+}
+
+.section2, .section3 {
+  padding-bottom: 10vh;
 }
 /*# sourceMappingURL=style.css.map */
