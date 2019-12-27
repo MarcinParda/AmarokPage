@@ -34,6 +34,19 @@ a:hover, a:hover i {
   color: #fff;
 }
 
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.container span.back {
+  display: block;
+  padding-top: 60px;
+}
+
 article {
   font-size: 16px;
 }
@@ -111,21 +124,13 @@ main {
   overflow: hidden;
 }
 
-main .container {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 0;
-}
-
-main .container img {
+main img {
   margin: 0 auto;
   padding-top: 5vh;
   width: 70vw;
 }
 
-main .container article {
+main article {
   margin: 0 auto;
   text-align: justify;
   width: 70vw;
@@ -133,7 +138,7 @@ main .container article {
   font-style: italic;
 }
 
-main .container article span.italic {
+main article span.italic {
   font-size: 16px;
   font-style: normal;
 }
@@ -144,7 +149,5 @@ section.section1 {
   background-color: #000;
   overflow: hidden;
   background-color: #111;
-  text-align: center;
-  display: block;
 }
 /*# sourceMappingURL=style.css.map */

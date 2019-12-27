@@ -1,24 +1,18 @@
 @import 'mixins'
 main
     @include screen
-    .container
-        width: 80%
-        height: 100%
+    img
         margin: 0 auto
-        text-align: center
-        font-size: 0
-        img
-            margin: 0 auto
-            padding-top: 5vh
-            width: 70vw
+        padding-top: 5vh
+        width: 70vw
             //background-color: #222
-        article
-            margin: 0 auto
-            text-align: justify
-            width: 70vw
-            height: 40vh
-            font-style: italic
-            //background-color: #111
-            span.italic
-                font-size: $article-size
-                font-style: normal
+    article
+        margin: 0 auto
+        text-align: justify
+        width: 70vw
+        height: 40vh
+        font-style: italic
+        //background-color: #111
+        span.italic
+            font-size: $article-size
+            font-style: normal
