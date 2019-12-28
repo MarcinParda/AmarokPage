@@ -2,21 +2,34 @@ nav
     width: 100vw
     height: $navH
     position: fixed
+    display: flex
+    flex-direction: row
+    .media-nav
+        width: 10%
+        ul
+            li
+                a
+                    font-size: $font-size + 2
+    .main-nav
+        width: 90%
+        ul
+            justify-content: flex-end
+            li
+                flex-basis: 10%
     ul
+        padding-inline-start: 0
         line-height: $navH - 2 * $nav-a-padding
         list-style: none
         display: flex
         flex-direction: row
-        justify-content: flex-end
         background-color: rgba(0,0,0,0.7)
         li
-            flex-basis: 10%
             a
                 display: block
                 font-size: $font-size - 2
                 padding: $nav-a-padding
         li:last-child
-            flex-basis: 5%
+            flex-basis: 7.5%
         li:hover a
             color: $font-color
 nav.arrowUp
@@ -32,6 +45,7 @@ nav.arrowUp
     text-align: center
     transition: .3s
     i
+        margin-left: 10px
         color: $a-color
         line-height: 48px
 nav.arrowUp:hover

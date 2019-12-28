@@ -77,9 +77,41 @@ nav {
   width: 100vw;
   height: 50px;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .media-nav {
+  width: 10%;
+}
+
+nav .media-nav ul li a {
+  font-size: 16px;
+}
+
+nav .main-nav {
+  width: 90%;
+}
+
+nav .main-nav ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .main-nav ul li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
 }
 
 nav ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
   line-height: 40px;
   list-style: none;
   display: -webkit-box;
@@ -89,15 +121,7 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-nav ul li {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
 }
 
 nav ul li a {
@@ -107,8 +131,8 @@ nav ul li a {
 }
 
 nav ul li:last-child {
-  -ms-flex-preferred-size: 5%;
-      flex-basis: 5%;
+  -ms-flex-preferred-size: 7.5%;
+      flex-basis: 7.5%;
 }
 
 nav ul li:hover a {
@@ -131,6 +155,7 @@ nav.arrowUp {
 }
 
 nav.arrowUp i {
+  margin-left: 10px;
   color: #aaa;
   line-height: 48px;
 }
