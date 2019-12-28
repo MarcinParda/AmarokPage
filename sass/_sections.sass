@@ -8,11 +8,26 @@ section
         span
             font-size: $article-size
 
-.section1, .section3
+.section1, .section3, .section5
     background-color: #111
-.section2
+.section2, .section4, .section6
     background-color: #000
-.section1
-    height: 100vh
-.section2, .section3
+.section2, .section3, .section4
     padding-bottom: 10vh
+.section1, .section5
+    height: 100vh
+
+.section5
+    article
+        padding-bottom: 5vh
+.section6
+    article
+        font-size: $article-size - 1
+        text-align: center
+        margin: 5vh auto 0 auto
+        font-style: italic
+    img
+        margin: 0
+        margin-top: 1vh
+    img:last-child
+        margin-bottom: 10vh
