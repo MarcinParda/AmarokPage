@@ -61,6 +61,7 @@ article {
   text-align: justify;
   width: 70vw;
   font-size: 16px;
+  line-height: 150%;
 }
 
 article span.italic {
@@ -168,7 +169,7 @@ section article span {
   font-size: 16px;
 }
 
-.section1, .section3, .section5 {
+.section1, .section3, .section5, .section7 {
   background-color: #111;
 }
 
@@ -180,7 +181,7 @@ section article span {
   padding-bottom: 10vh;
 }
 
-.section1, .section5 {
+.section1, .section5, .section7 {
   height: 100vh;
 }
 
@@ -202,5 +203,24 @@ section article span {
 
 .section6 img:last-child {
   margin-bottom: 10vh;
+}
+
+.section7 img.title {
+  margin-bottom: 5vh;
+}
+
+.section7 article {
+  margin-top: 7.5vh;
+  text-align: center;
+}
+
+.section7 .media {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.section7 .media i {
+  font-size: 50px;
+  margin: 1vh;
 }
 /*# sourceMappingURL=style.css.map */
