@@ -4,9 +4,6 @@ section
         max-width: 100%
     img.title
         margin-top: 60px
-    article
-        span
-            font-size: $article-size
 
 .section1, .section3, .section5, .section7
     background-color: #111
@@ -43,3 +40,17 @@ section
         i
             font-size: 50px
             margin: 1vh
+@media screen and ( min-width: 1300px )
+    .section7
+        a
+            font-size: $font-size + 2
+
+@media screen and ( min-width: 1500px )
+    .section7
+        a
+            font-size: $font-size + 6
+
+@media screen and ( min-width: 1900px )
+    .section7
+        a
+            font-size: $font-size + 10

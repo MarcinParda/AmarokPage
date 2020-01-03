@@ -6,8 +6,32 @@ article
     font-size: $article-size
     line-height: 150%
     //background-color: #111
-    span.italic
+    span
         font-size: $article-size
+    span.italic
         font-style: italic
         p
             font-size: $article-size
+@media screen and ( min-width: 1300px )
+    article
+        font-size: $article-size + 2
+        span
+            font-size: $article-size + 2
+        p
+            font-size: $article-size + 2
+
+@media screen and ( min-width: 1500px )
+    article
+        font-size: $article-size + 6
+        span
+            font-size: $article-size + 6
+        p
+            font-size: $article-size + 6
+
+@media screen and ( min-width: 1900px )
+    article
+        font-size: $article-size + 10
+        span
+            font-size: $article-size + 10
+        p
+            font-size: $article-size + 10

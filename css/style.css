@@ -64,13 +64,52 @@ article {
   line-height: 150%;
 }
 
-article span.italic {
+article span {
   font-size: 16px;
+}
+
+article span.italic {
   font-style: italic;
 }
 
 article span.italic p {
   font-size: 16px;
+}
+
+@media screen and (min-width: 1300px) {
+  article {
+    font-size: 18px;
+  }
+  article span {
+    font-size: 18px;
+  }
+  article p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  article {
+    font-size: 22px;
+  }
+  article span {
+    font-size: 22px;
+  }
+  article p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  article {
+    font-size: 26px;
+  }
+  article span {
+    font-size: 26px;
+  }
+  article p {
+    font-size: 26px;
+  }
 }
 
 nav {
@@ -181,6 +220,33 @@ main img {
   width: 70vw;
 }
 
+@media screen and (min-width: 1300px) {
+  main .container article {
+    font-size: 18px;
+  }
+  main .container article span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  main .container article {
+    font-size: 22px;
+  }
+  main .container article span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  main .container article {
+    font-size: 26px;
+  }
+  main .container article span {
+    font-size: 26px;
+  }
+}
+
 section img {
   margin-top: 5vh;
   max-width: 100%;
@@ -188,10 +254,6 @@ section img {
 
 section img.title {
   margin-top: 60px;
-}
-
-section article span {
-  font-size: 16px;
 }
 
 .section1, .section3, .section5, .section7 {
@@ -247,5 +309,23 @@ section article span {
 .section7 .media i {
   font-size: 50px;
   margin: 1vh;
+}
+
+@media screen and (min-width: 1300px) {
+  .section7 a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section7 a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .section7 a {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
