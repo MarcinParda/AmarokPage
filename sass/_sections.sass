@@ -17,6 +17,8 @@ section
 .section5
     article
         padding-bottom: 5vh
+    iframe
+        width: 100%
 .section6
     article
         font-size: $article-size - 1
@@ -40,10 +42,13 @@ section
         i
             font-size: 50px
             margin: 1vh
-@media screen and ( min-width: 1300px )
+@media screen and ( min-width: 1000px )
     .section7
         a
             font-size: $font-size + 2
+    .section5
+        iframe
+            width: 70%
 
 @media screen and ( min-width: 1500px )
     .section7
@@ -54,3 +59,15 @@ section
     .section7
         a
             font-size: $font-size + 10
+@media (orientation: portrait) and ( min-width: 1000px )
+    .section7
+        a
+            font-size: $font-size + 14
+@media (orientation: portrait) and ( min-width: 700px )
+    .section7
+        a
+            font-size: $font-size + 10
+@media (orientation: portrait) and ( max-width: 400px )
+    .section7
+        a
+            font-size: $font-size

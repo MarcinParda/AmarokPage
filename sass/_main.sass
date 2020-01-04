@@ -32,3 +32,27 @@ main
                 font-size: $article-size + 10
                 span
                     font-size: $article-size + 10
+
+@media (orientation: portrait) and ( min-width: 1000px )
+    main
+        .container
+            article
+                font-size: $article-size + 14
+                span
+                    font-size: $article-size + 14
+
+@media (orientation: portrait) and ( min-width: 700px )
+    main
+        .container
+            article
+                font-size: $article-size + 10
+                span
+                    font-size: $article-size + 10
+
+@media (orientation: portrait) and ( max-width: 400px )
+    main
+        .container
+            article
+                font-size: $article-size - 4
+                span
+                    font-size: $article-size - 4

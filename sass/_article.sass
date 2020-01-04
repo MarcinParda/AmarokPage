@@ -2,7 +2,7 @@ article
     margin: 0 auto
     margin-top: 5vh
     text-align: justify
-    width: 70vw
+    width: 100%
     font-size: $article-size
     line-height: 150%
     //background-color: #111
@@ -14,6 +14,7 @@ article
             font-size: $article-size
 @media screen and ( min-width: 1300px )
     article
+        width: 80%
         font-size: $article-size + 2
         span
             font-size: $article-size + 2
@@ -35,3 +36,27 @@ article
             font-size: $article-size + 10
         p
             font-size: $article-size + 10
+
+@media (orientation: portrait) and ( min-width: 700px )
+    article
+        font-size: $article-size + 10
+        span
+            font-size: $article-size + 10
+        p
+            font-size: $article-size + 10
+
+@media (orientation: portrait) and ( min-width: 1000px )
+    article
+        font-size: $article-size + 14
+        span
+            font-size: $article-size + 14
+        p
+            font-size: $article-size + 14
+
+@media (orientation: portrait) and ( max-width: 400px )
+    article
+        font-size: $article-size - 4
+        span
+            font-size: $article-size - 4
+        p
+            font-size: $article-size - 4

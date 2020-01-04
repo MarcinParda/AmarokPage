@@ -15,7 +15,7 @@ nav
         ul
             justify-content: flex-end
             li
-                flex-basis: 10%
+                flex-basis: 12%
     ul
         padding-inline-start: 0
         line-height: $navH - 2 * $nav-a-padding
@@ -45,8 +45,22 @@ nav.arrowUp
     text-align: center
     transition: .3s
     i
-        margin-left: 10px
         color: $a-color
         line-height: 48px
 nav.arrowUp:hover
     background-color: $font-color
+
+.ang
+    width: 15px
+    height: 15px
+    position: fixed
+    top: 15px
+    right: 15px
+
+@media (orientation: portrait)
+    nav
+        display: none
+
+@media (orientation: landscape)
+    .ang
+        display: none

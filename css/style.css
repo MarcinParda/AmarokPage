@@ -59,7 +59,7 @@ article {
   margin: 0 auto;
   margin-top: 5vh;
   text-align: justify;
-  width: 70vw;
+  width: 100%;
   font-size: 16px;
   line-height: 150%;
 }
@@ -78,6 +78,7 @@ article span.italic p {
 
 @media screen and (min-width: 1300px) {
   article {
+    width: 80%;
     font-size: 18px;
   }
   article span {
@@ -109,6 +110,42 @@ article span.italic p {
   }
   article p {
     font-size: 26px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 700px) {
+  article {
+    font-size: 26px;
+  }
+  article span {
+    font-size: 26px;
+  }
+  article p {
+    font-size: 26px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 1000px) {
+  article {
+    font-size: 30px;
+  }
+  article span {
+    font-size: 30px;
+  }
+  article p {
+    font-size: 30px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+  article {
+    font-size: 12px;
+  }
+  article span {
+    font-size: 12px;
+  }
+  article p {
+    font-size: 12px;
   }
 }
 
@@ -144,8 +181,8 @@ nav .main-nav ul {
 }
 
 nav .main-nav ul li {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
 }
 
 nav ul {
@@ -194,13 +231,32 @@ nav.arrowUp {
 }
 
 nav.arrowUp i {
-  margin-left: 10px;
   color: #aaa;
   line-height: 48px;
 }
 
 nav.arrowUp:hover {
   background-color: #fff;
+}
+
+.ang {
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+@media (orientation: portrait) {
+  nav {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  .ang {
+    display: none;
+  }
 }
 
 main {
@@ -247,6 +303,33 @@ main img {
   }
 }
 
+@media (orientation: portrait) and (min-width: 1000px) {
+  main .container article {
+    font-size: 30px;
+  }
+  main .container article span {
+    font-size: 30px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 700px) {
+  main .container article {
+    font-size: 26px;
+  }
+  main .container article span {
+    font-size: 26px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+  main .container article {
+    font-size: 12px;
+  }
+  main .container article span {
+    font-size: 12px;
+  }
+}
+
 section img {
   margin-top: 5vh;
   max-width: 100%;
@@ -274,6 +357,10 @@ section img.title {
 
 .section5 article {
   padding-bottom: 5vh;
+}
+
+.section5 iframe {
+  width: 100%;
 }
 
 .section6 article {
@@ -311,9 +398,12 @@ section img.title {
   margin: 1vh;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1000px) {
   .section7 a {
     font-size: 16px;
+  }
+  .section5 iframe {
+    width: 70%;
   }
 }
 
@@ -326,6 +416,24 @@ section img.title {
 @media screen and (min-width: 1900px) {
   .section7 a {
     font-size: 24px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 1000px) {
+  .section7 a {
+    font-size: 28px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 700px) {
+  .section7 a {
+    font-size: 24px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+  .section7 a {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
