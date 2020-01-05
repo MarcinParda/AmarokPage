@@ -264,11 +264,40 @@ nav.arrowUp:hover {
 }
 
 .ang {
-  width: 15px;
   height: 15px;
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 0;
+  right: 0;
+}
+
+.ang ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+}
+
+.ang ul li a {
+  display: block;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.ang ul li:last-child {
+  -ms-flex-preferred-size: 7.5%;
+      flex-basis: 7.5%;
+}
+
+.ang ul li:hover a {
+  color: #fff;
 }
 
 @media (orientation: portrait) {
@@ -283,7 +312,7 @@ nav.arrowUp:hover {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 1000px) {
   .ang {
     display: none;
   }

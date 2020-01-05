@@ -51,11 +51,26 @@ nav.arrowUp:hover
     background-color: $font-color
 
 .ang
-    width: 15px
     height: 15px
     position: fixed
-    top: 15px
-    right: 15px
+    top: 0
+    right: 0
+    ul
+        padding-inline-start: 0
+        list-style: none
+        display: flex
+        flex-direction: row
+        background-color: rgba(0,0,0,0.7)
+        border-radius: 2px
+        li
+            a
+                display: block
+                font-size: $font-size - 2
+                padding: $nav-a-padding
+        li:last-child
+            flex-basis: 7.5%
+        li:hover a
+            color: $font-color
 
 @media (orientation: portrait)
     nav
@@ -66,6 +81,6 @@ nav.arrowUp:hover
     nav
         display: none
 
-@media (orientation: landscape)
+@media (orientation: landscape) and (min-width: 1000px)
     .ang
         display: none
