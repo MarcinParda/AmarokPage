@@ -306,6 +306,10 @@ main img {
   width: 70vw;
 }
 
+main .continue {
+  display: none;
+}
+
 @media screen and (min-width: 1300px) {
   main .container article {
     font-size: 18px;
@@ -361,6 +365,12 @@ main img {
 }
 
 @media (orientation: landscape) and (max-width: 1000px) {
+  main .continue {
+    display: block;
+  }
+  main .continue a {
+    font-size: 11px;
+  }
   main img {
     width: 50vw;
   }
@@ -373,6 +383,9 @@ main img {
 }
 
 @media (orientation: landscape) and (max-width: 700px) {
+  main .continue a {
+    font-size: 10px;
+  }
   main .container article {
     font-size: 10px;
   }
