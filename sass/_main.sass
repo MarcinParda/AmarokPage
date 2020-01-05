@@ -40,8 +40,20 @@ main
 
 //Responsive for vertical phone/tablets
 
+@media (orientation: portrait)
+    main
+        article
+            height: 65vh
+@media (orientation: portrait) and ( min-width: 300px )
+    main
+        .continue
+            display: block
+
 @media (orientation: portrait) and ( min-width: 1000px )
     main
+        .continue
+            a
+                font-size: $article-size + 14
         .container
             article
                 font-size: $article-size + 14
@@ -50,6 +62,9 @@ main
 
 @media (orientation: portrait) and ( min-width: 700px )
     main
+        .continue
+            a
+                font-size: $article-size + 10
         .container
             article
                 font-size: $article-size + 10
@@ -58,11 +73,15 @@ main
 
 @media (orientation: portrait) and ( max-width: 400px )
     main
+        .continue
+            a
+                font-size: $article-size - 4
         .container
             article
                 font-size: $article-size - 4
                 span
                     font-size: $article-size - 4
+
 
 //Responsive for horizontal phones/tablets
 

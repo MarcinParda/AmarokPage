@@ -293,7 +293,6 @@ main {
   height: 100vh;
   width: 100%;
   background-color: #000;
-  overflow: hidden;
 }
 
 main article {
@@ -337,7 +336,22 @@ main .continue {
   }
 }
 
+@media (orientation: portrait) {
+  main article {
+    height: 65vh;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 300px) {
+  main .continue {
+    display: block;
+  }
+}
+
 @media (orientation: portrait) and (min-width: 1000px) {
+  main .continue a {
+    font-size: 30px;
+  }
   main .container article {
     font-size: 30px;
   }
@@ -347,6 +361,9 @@ main .continue {
 }
 
 @media (orientation: portrait) and (min-width: 700px) {
+  main .continue a {
+    font-size: 26px;
+  }
   main .container article {
     font-size: 26px;
   }
@@ -356,6 +373,9 @@ main .continue {
 }
 
 @media (orientation: portrait) and (max-width: 400px) {
+  main .continue a {
+    font-size: 12px;
+  }
   main .container article {
     font-size: 12px;
   }
@@ -415,8 +435,12 @@ section img.title {
   padding-bottom: 10vh;
 }
 
-.section1, .section5, .section7 {
+.section1, .section7 {
   height: 100vh;
+}
+
+.section1 {
+  overflow: hidden;
 }
 
 .section5 article {
@@ -425,6 +449,8 @@ section img.title {
 
 .section5 iframe {
   width: 100%;
+  height: 30vw;
+  margin-bottom: 2vw;
 }
 
 .section6 article {
