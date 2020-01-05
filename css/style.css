@@ -149,6 +149,30 @@ article span.italic p {
   }
 }
 
+@media (orientation: landscape) and (max-width: 1000px) {
+  article {
+    font-size: 9px;
+  }
+  article span {
+    font-size: 9px;
+  }
+  article p {
+    font-size: 9px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 700px) {
+  article {
+    font-size: 10px;
+  }
+  article span {
+    font-size: 10px;
+  }
+  article p {
+    font-size: 10px;
+  }
+}
+
 nav {
   width: 100vw;
   height: 50px;
@@ -253,6 +277,12 @@ nav.arrowUp:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+
 @media (orientation: landscape) {
   .ang {
     display: none;
@@ -260,10 +290,10 @@ nav.arrowUp:hover {
 }
 
 main {
+  height: 100vh;
   width: 100%;
   background-color: #000;
   overflow: hidden;
-  height: 100vh;
 }
 
 main article {
@@ -327,6 +357,27 @@ main img {
   }
   main .container article span {
     font-size: 12px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  main img {
+    width: 50vw;
+  }
+  main .container article {
+    font-size: 11px;
+  }
+  main .container article span {
+    font-size: 11px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 700px) {
+  main .container article {
+    font-size: 10px;
+  }
+  main .container article span {
+    font-size: 10px;
   }
 }
 
@@ -434,6 +485,16 @@ section img.title {
 @media (orientation: portrait) and (max-width: 400px) {
   .section7 a {
     font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  section img {
+    margin-top: 5vh;
+    max-width: 80%;
+  }
+  section img.title {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

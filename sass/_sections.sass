@@ -42,6 +42,9 @@ section
         i
             font-size: 50px
             margin: 1vh
+
+//Responsive for computers
+
 @media screen and ( min-width: 1000px )
     .section7
         a
@@ -59,6 +62,9 @@ section
     .section7
         a
             font-size: $font-size + 10
+
+//Responsive for vertical phone/tablets
+
 @media (orientation: portrait) and ( min-width: 1000px )
     .section7
         a
@@ -71,3 +77,13 @@ section
     .section7
         a
             font-size: $font-size
+            
+//Responsive for horizontal phones/tablets
+
+@media (orientation: landscape) and ( max-width: 1000px )
+    section
+        img
+            margin-top: 5vh
+            max-width: 80%
+        img.title
+            margin-top: 10px

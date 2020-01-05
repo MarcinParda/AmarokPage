@@ -1,7 +1,7 @@
 @import 'mixins'
 main
-    @include screen
     height: 100vh
+    @include screen
     article
         height: 40vh
     img
@@ -9,6 +9,9 @@ main
         margin-top: 5vh
         width: 70vw
         //background-color: #222
+
+//Responsive for computers
+
 @media screen and ( min-width: 1300px )
     main
         .container
@@ -33,6 +36,8 @@ main
                 span
                     font-size: $article-size + 10
 
+//Responsive for vertical phone/tablets
+
 @media (orientation: portrait) and ( min-width: 1000px )
     main
         .container
@@ -56,3 +61,23 @@ main
                 font-size: $article-size - 4
                 span
                     font-size: $article-size - 4
+
+//Responsive for horizontal phones/tablets
+
+@media (orientation: landscape) and ( max-width: 1000px )
+    main
+        img
+            width: 50vw
+        .container
+            article
+                font-size: $article-size - 5
+                span
+                    font-size: $article-size - 5
+
+@media (orientation: landscape) and ( max-width: 700px )
+    main
+        .container
+            article
+                font-size: $article-size - 6
+                span
+                    font-size: $article-size - 6

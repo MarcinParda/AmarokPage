@@ -12,6 +12,9 @@ article
         font-style: italic
         p
             font-size: $article-size
+
+//Responsive for computers
+
 @media screen and ( min-width: 1300px )
     article
         width: 80%
@@ -37,6 +40,8 @@ article
         p
             font-size: $article-size + 10
 
+//Responsive for vertical phone/tablets
+
 @media (orientation: portrait) and ( min-width: 700px )
     article
         font-size: $article-size + 10
@@ -60,3 +65,21 @@ article
             font-size: $article-size - 4
         p
             font-size: $article-size - 4
+            
+//Responsive for horizontal phones/tablets
+
+@media (orientation: landscape) and ( max-width: 1000px )
+    article
+        font-size: $article-size - 7
+        span
+            font-size: $article-size - 7
+        p
+            font-size: $article-size - 7
+
+@media (orientation: landscape) and ( max-width: 700px )
+    article
+        font-size: $article-size - 6
+        span
+            font-size: $article-size - 6
+        p
+            font-size: $article-size - 6
