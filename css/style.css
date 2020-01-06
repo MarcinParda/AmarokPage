@@ -312,6 +312,12 @@ nav.arrowUp:hover {
   }
 }
 
+@media (min-width: 1000px) {
+  nav.arrowUp {
+    display: block;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 1000px) {
   .ang {
     display: none;
